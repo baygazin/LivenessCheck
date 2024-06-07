@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3AB988972C11F03300B0FB9C /* Liveness.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB988952C11F02D00B0FB9C /* Liveness.xcframework */; };
-		3AB988982C11F03300B0FB9C /* Liveness.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB988952C11F02D00B0FB9C /* Liveness.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3AE79A182C06F99D006B2926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE79A172C06F99D006B2926 /* AppDelegate.swift */; };
 		3AE79A1A2C06F99D006B2926 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE79A192C06F99D006B2926 /* RootViewController.swift */; };
 		3AE79A1E2C06F99E006B2926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AE79A1D2C06F99E006B2926 /* Assets.xcassets */; };
@@ -23,7 +21,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3AB988982C11F03300B0FB9C /* Liveness.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -34,7 +31,6 @@
 		181E52BE5D325A5848B7EC7C /* Pods_LivenessCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LivenessCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A3CA8342C103BD200D2DA70 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		3A3CA8352C103BE300D2DA70 /* kk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kk; path = kk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		3AB988952C11F02D00B0FB9C /* Liveness.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Liveness.xcframework; sourceTree = "<group>"; };
 		3ABD054B2C08401B00D9AAA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AE79A142C06F99D006B2926 /* LivenessCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivenessCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AE79A172C06F99D006B2926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +46,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AB988972C11F03300B0FB9C /* Liveness.xcframework in Frameworks */,
 				81F0E56BF63C7FFFC4C08856 /* Pods_LivenessCheck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,7 +86,6 @@
 		BBAFCB3937E6FEDC3AAD431F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3AB988952C11F02D00B0FB9C /* Liveness.xcframework */,
 				181E52BE5D325A5848B7EC7C /* Pods_LivenessCheck.framework */,
 			);
 			name = Frameworks;
@@ -404,6 +398,60 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GTMSessionFetcher\"",
+					"-framework",
+					"\"GoogleDataTransport\"",
+					"-framework",
+					"\"GoogleToolboxForMac\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"GoogleUtilitiesComponents\"",
+					"-framework",
+					"\"Liveness\"",
+					"-framework",
+					"\"LocalAuthentication\"",
+					"-framework",
+					"\"MLImage\"",
+					"-framework",
+					"\"MLKitCommon\"",
+					"-framework",
+					"\"MLKitFaceDetection\"",
+					"-framework",
+					"\"MLKitVision\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-Wl,-ld_classic",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.baygazin.LivenessCheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -436,6 +484,60 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GTMSessionFetcher\"",
+					"-framework",
+					"\"GoogleDataTransport\"",
+					"-framework",
+					"\"GoogleToolboxForMac\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"GoogleUtilitiesComponents\"",
+					"-framework",
+					"\"Liveness\"",
+					"-framework",
+					"\"LocalAuthentication\"",
+					"-framework",
+					"\"MLImage\"",
+					"-framework",
+					"\"MLKitCommon\"",
+					"-framework",
+					"\"MLKitFaceDetection\"",
+					"-framework",
+					"\"MLKitVision\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-Wl,-ld_classic",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.baygazin.LivenessCheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
