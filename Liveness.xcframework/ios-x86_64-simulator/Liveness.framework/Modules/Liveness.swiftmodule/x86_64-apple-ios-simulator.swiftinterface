@@ -1,0 +1,115 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Liveness
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import CoreVideo
+import DeveloperToolsSupport
+import Foundation
+import Swift
+import SwiftUI
+import UIKit.UIImage
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc public enum LivenessAlert : Swift.Int {
+  case faceNotFound
+  case singleFace
+  case straightHeadOpenEyes
+  case headOutOfBounds
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum LivenessMessage {
+  case succeeded
+  case alert(Liveness.LivenessAlert)
+  case pass(Liveness.LivenessAction)
+  case passed(Liveness.LivenessResult)
+  case imageCaptureError
+}
+@objc public protocol LivenessDataSource {
+  @objc func liveness(textForAlert alert: Liveness.LivenessAlert) -> Swift.String?
+  @objc func liveness(textForAction action: Liveness.LivenessAction) -> Swift.String?
+  @objc func liveness(descriptionTextForAction action: Liveness.LivenessAction) -> Swift.String?
+  @objc func liveness(textForPassedAction action: Liveness.LivenessAction) -> Swift.String?
+}
+extension Liveness.LivenessDataSource {
+  public func liveness(textForAlert alert: Liveness.LivenessAlert) -> Swift.String?
+  public func liveness(textForAction action: Liveness.LivenessAction) -> Swift.String?
+  public func liveness(descriptionTextForAction action: Liveness.LivenessAction) -> Swift.String?
+  public func liveness(textForPassedAction action: Liveness.LivenessAction) -> Swift.String?
+}
+@objc @_hasMissingDesignatedInitializers public class LivenessResult : ObjectiveC.NSObject {
+  @objc final public let action: Liveness.LivenessAction
+  @objc final public let image: UIKit.UIImage?
+  @objc deinit
+}
+@objc public protocol LivenessDelegate {
+  @objc func liveness(didCaptureFaceIn image: UIKit.UIImage)
+  @objc func liveness(willPassAction action: Liveness.LivenessAction)
+  @objc func liveness(didPassActionWith result: Liveness.LivenessResult)
+  @objc func liveness(didRecordVideoTo url: Foundation.URL)
+  @objc func livenessDidSucceed()
+}
+extension Liveness.LivenessDelegate {
+  public func liveness(willPassAction action: Liveness.LivenessAction)
+  public func liveness(didRecordVideoTo url: Foundation.URL)
+}
+@objc public enum LivenessAction : Swift.Int {
+  case smile
+  case turnLeft
+  case turnRight
+  case tiltLeft
+  case tiltRight
+  case blink
+  case openMouth
+  case sayWord
+  case additional
+  public static func generate() -> [Liveness.LivenessAction]
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class LivenessViewController : UIKit.UIViewController {
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any Liveness.LivenessDelegate)?
+  @objc @_Concurrency.MainActor(unsafe) weak public var dataSource: (any Liveness.LivenessDataSource)?
+  @objc @_Concurrency.MainActor(unsafe) public var shouldSetMaxBrightness: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public var titleColor: UIKit.UIColor
+  @objc @_Concurrency.MainActor(unsafe) public var loadingText: Swift.String?
+  @objc @_Concurrency.MainActor(unsafe) public init(isRecordingEnabled: Swift.Bool = false)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @objc deinit
+}
+extension Liveness.LivenessViewController {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var titleFont: UIKit.UIFont {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var descriptionFont: UIKit.UIFont {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var descriptionColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var isActivityIndicatorLoading: Swift.Bool {
+    @objc get
+    @objc set
+  }
+}
+extension Liveness.LivenessAlert : Swift.Equatable {}
+extension Liveness.LivenessAlert : Swift.Hashable {}
+extension Liveness.LivenessAlert : Swift.RawRepresentable {}
+extension Liveness.LivenessAction : Swift.Equatable {}
+extension Liveness.LivenessAction : Swift.Hashable {}
+extension Liveness.LivenessAction : Swift.RawRepresentable {}

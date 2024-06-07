@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3AD818232C12DC8000BEBDD6 /* Liveness.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD818212C12DC7B00BEBDD6 /* Liveness.xcframework */; };
+		3AD818242C12DC8000BEBDD6 /* Liveness.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD818212C12DC7B00BEBDD6 /* Liveness.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3AE79A182C06F99D006B2926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE79A172C06F99D006B2926 /* AppDelegate.swift */; };
 		3AE79A1A2C06F99D006B2926 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE79A192C06F99D006B2926 /* RootViewController.swift */; };
 		3AE79A1E2C06F99E006B2926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AE79A1D2C06F99E006B2926 /* Assets.xcassets */; };
@@ -21,6 +23,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				3AD818242C12DC8000BEBDD6 /* Liveness.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,6 +35,7 @@
 		3A3CA8342C103BD200D2DA70 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		3A3CA8352C103BE300D2DA70 /* kk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kk; path = kk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		3ABD054B2C08401B00D9AAA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AD818212C12DC7B00BEBDD6 /* Liveness.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Liveness.xcframework; sourceTree = "<group>"; };
 		3AE79A142C06F99D006B2926 /* LivenessCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivenessCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AE79A172C06F99D006B2926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AE79A192C06F99D006B2926 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AD818232C12DC8000BEBDD6 /* Liveness.xcframework in Frameworks */,
 				81F0E56BF63C7FFFC4C08856 /* Pods_LivenessCheck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +91,7 @@
 		BBAFCB3937E6FEDC3AAD431F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3AD818212C12DC7B00BEBDD6 /* Liveness.xcframework */,
 				181E52BE5D325A5848B7EC7C /* Pods_LivenessCheck.framework */,
 			);
 			name = Frameworks;

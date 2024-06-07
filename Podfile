@@ -7,8 +7,8 @@ target 'LivenessCheck' do
   inhibit_all_warnings!
 
   # Pods for LivenessCheck
-  # pod 'GoogleMLKit/FaceDetection'
-  pod 'Liveness', :git => 'https://github.com/Salmik/LivenessLibrary', :tag => '1.0.4'
+  pod 'GoogleMLKit/FaceDetection'
+  # pod 'Liveness', :git => 'https://github.com/Salmik/LivenessLibrary', :tag => '1.0.4'
 
   post_install do |installer|
     installer.pods_project.build_configurations.each do |config|
