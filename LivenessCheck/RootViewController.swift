@@ -52,11 +52,6 @@ class RootViewController: UIViewController {
 
     private func stylize() {
         livenessViewController.view.backgroundColor = .clear
-        livenessViewController.titleColor = .black
-        livenessViewController.titleFont = .boldSystemFont(ofSize: 14)
-        livenessViewController.descriptionColor = .black
-        livenessViewController.descriptionFont = .boldSystemFont(ofSize: 14)
-        livenessViewController.loadingText = "Liveness.verify"
         livenessViewController.shouldSetMaxBrightness = true
     }
 
@@ -92,37 +87,16 @@ extension RootViewController: LivenessDelegate {
 extension RootViewController: LivenessDataSource {
 
     func liveness(textForAlert alert: LivenessAlert) -> String? {
-        switch alert {
-        case .faceNotFound: return "Registration.faceNotFound"
-        case .singleFace: return "Registration.toManyFaceError"
-        case .straightHeadOpenEyes: return "Registration.faceError1"
-        case .headOutOfBounds: return "Registration.faceError2"
-        @unknown default: return nil
-        }
+        defaultLiveness(textForAlert: alert)
     }
 
     func liveness(textForAction action: LivenessAction) -> String? {
-        switch action {
-        case .smile: return "Registration.smile"
-        case .turnLeft: return "Registration.turnLeft"
-        case .turnRight: return "Registration.turnRight"
-        case .tiltLeft: return "Registration.leanLeft"
-        case .tiltRight: return "Registration.leanRight"
-        case .blink: return "Registration.blink"
-        case .openMouth: return "Registration.openMouth"
-        case .sayWord: return "Registration.sayMama"
-        case .additional: return ""
-        default: return nil
-        }
+        defaultLiveness(textForAction: action)
     }
 
     func liveness(descriptionTextForAction action: LivenessAction) -> String? {
-        switch action {
-        case .turnLeft: return String(format: "Registration.moveHeadSlowly", "Registration.left")
-        case .turnRight: return String(format: "Registration.moveHeadSlowly", "Registration.right")
-        default: return nil
-        }
+        defaultLiveness(descriptionTextForAction: action)
     }
 
-    func liveness(textForPassedAction action: LivenessAction) -> String? { return "Success.title" }
+    func liveness(textForPassedAction action: LivenessAction) -> String? { defaultLiveness(textForPassedAction: action) }
 }

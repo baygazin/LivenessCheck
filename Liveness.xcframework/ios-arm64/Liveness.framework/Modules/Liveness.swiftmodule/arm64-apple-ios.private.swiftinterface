@@ -24,12 +24,13 @@ import _SwiftConcurrencyShims
     get
   }
 }
-public enum LivenessMessage {
+public enum LivenessMessage : Swift.Equatable {
   case succeeded
   case alert(Liveness.LivenessAlert)
   case pass(Liveness.LivenessAction)
   case passed(Liveness.LivenessResult)
   case imageCaptureError
+  public static func == (a: Liveness.LivenessMessage, b: Liveness.LivenessMessage) -> Swift.Bool
 }
 @objc public protocol LivenessDataSource {
   @objc func liveness(textForAlert alert: Liveness.LivenessAlert) -> Swift.String?
@@ -38,10 +39,10 @@ public enum LivenessMessage {
   @objc func liveness(textForPassedAction action: Liveness.LivenessAction) -> Swift.String?
 }
 extension Liveness.LivenessDataSource {
-  public func liveness(textForAlert alert: Liveness.LivenessAlert) -> Swift.String?
-  public func liveness(textForAction action: Liveness.LivenessAction) -> Swift.String?
-  public func liveness(descriptionTextForAction action: Liveness.LivenessAction) -> Swift.String?
-  public func liveness(textForPassedAction action: Liveness.LivenessAction) -> Swift.String?
+  public func defaultLiveness(textForAlert alert: Liveness.LivenessAlert) -> Swift.String?
+  public func defaultLiveness(textForAction action: Liveness.LivenessAction) -> Swift.String?
+  public func defaultLiveness(descriptionTextForAction action: Liveness.LivenessAction) -> Swift.String?
+  public func defaultLiveness(textForPassedAction action: Liveness.LivenessAction) -> Swift.String?
 }
 @objc @_hasMissingDesignatedInitializers public class LivenessResult : ObjectiveC.NSObject {
   @objc final public let action: Liveness.LivenessAction
@@ -81,13 +82,13 @@ extension Liveness.LivenessDelegate {
   @objc @_Concurrency.MainActor(unsafe) weak public var dataSource: (any Liveness.LivenessDataSource)?
   @objc @_Concurrency.MainActor(unsafe) public var shouldSetMaxBrightness: Swift.Bool
   @objc @_Concurrency.MainActor(unsafe) public var titleColor: UIKit.UIColor
-  @objc @_Concurrency.MainActor(unsafe) public var loadingText: Swift.String?
+  @objc @_Concurrency.MainActor(unsafe) public var loadingText: Swift.String
   @objc @_Concurrency.MainActor(unsafe) public init(isRecordingEnabled: Swift.Bool = false)
+  @objc deinit
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
-  @objc deinit
 }
 extension Liveness.LivenessViewController {
   @objc @_Concurrency.MainActor(unsafe) dynamic public var titleFont: UIKit.UIFont {

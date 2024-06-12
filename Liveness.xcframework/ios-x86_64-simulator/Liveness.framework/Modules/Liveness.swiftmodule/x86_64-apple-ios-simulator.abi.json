@@ -645,6 +645,38 @@
             "usr": "s:8Liveness0A7MessageO17imageCaptureErroryA2CmF",
             "mangledName": "$s8Liveness0A7MessageO17imageCaptureErroryA2CmF",
             "moduleName": "Liveness"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LivenessMessage",
+                "printedName": "Liveness.LivenessMessage",
+                "usr": "s:8Liveness0A7MessageO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LivenessMessage",
+                "printedName": "Liveness.LivenessMessage",
+                "usr": "s:8Liveness0A7MessageO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Liveness0A7MessageO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s8Liveness0A7MessageO2eeoiySbAC_ACtFZ",
+            "moduleName": "Liveness",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Enum",
@@ -653,6 +685,25 @@
         "moduleName": "Liveness",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Liveness",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -832,8 +883,8 @@
           },
           {
             "kind": "Function",
-            "name": "liveness",
-            "printedName": "liveness(textForAlert:)",
+            "name": "defaultLiveness",
+            "printedName": "defaultLiveness(textForAlert:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -857,8 +908,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8Liveness0A10DataSourcePAAE8liveness12textForAlertSSSgAA0aG0O_tF",
-            "mangledName": "$s8Liveness0A10DataSourcePAAE8liveness12textForAlertSSSgAA0aG0O_tF",
+            "usr": "s:8Liveness0A10DataSourcePAAE07defaultA012textForAlertSSSgAA0aG0O_tF",
+            "mangledName": "$s8Liveness0A10DataSourcePAAE07defaultA012textForAlertSSSgAA0aG0O_tF",
             "moduleName": "Liveness",
             "genericSig": "<τ_0_0 where τ_0_0 : Liveness.LivenessDataSource>",
             "sugared_genericSig": "<Self where Self : Liveness.LivenessDataSource>",
@@ -870,8 +921,8 @@
           },
           {
             "kind": "Function",
-            "name": "liveness",
-            "printedName": "liveness(textForAction:)",
+            "name": "defaultLiveness",
+            "printedName": "defaultLiveness(textForAction:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -895,8 +946,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8Liveness0A10DataSourcePAAE8liveness13textForActionSSSgAA0aG0O_tF",
-            "mangledName": "$s8Liveness0A10DataSourcePAAE8liveness13textForActionSSSgAA0aG0O_tF",
+            "usr": "s:8Liveness0A10DataSourcePAAE07defaultA013textForActionSSSgAA0aG0O_tF",
+            "mangledName": "$s8Liveness0A10DataSourcePAAE07defaultA013textForActionSSSgAA0aG0O_tF",
             "moduleName": "Liveness",
             "genericSig": "<τ_0_0 where τ_0_0 : Liveness.LivenessDataSource>",
             "sugared_genericSig": "<Self where Self : Liveness.LivenessDataSource>",
@@ -908,8 +959,8 @@
           },
           {
             "kind": "Function",
-            "name": "liveness",
-            "printedName": "liveness(descriptionTextForAction:)",
+            "name": "defaultLiveness",
+            "printedName": "defaultLiveness(descriptionTextForAction:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -933,8 +984,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8Liveness0A10DataSourcePAAE8liveness24descriptionTextForActionSSSgAA0aH0O_tF",
-            "mangledName": "$s8Liveness0A10DataSourcePAAE8liveness24descriptionTextForActionSSSgAA0aH0O_tF",
+            "usr": "s:8Liveness0A10DataSourcePAAE07defaultA024descriptionTextForActionSSSgAA0aH0O_tF",
+            "mangledName": "$s8Liveness0A10DataSourcePAAE07defaultA024descriptionTextForActionSSSgAA0aH0O_tF",
             "moduleName": "Liveness",
             "genericSig": "<τ_0_0 where τ_0_0 : Liveness.LivenessDataSource>",
             "sugared_genericSig": "<Self where Self : Liveness.LivenessDataSource>",
@@ -946,8 +997,8 @@
           },
           {
             "kind": "Function",
-            "name": "liveness",
-            "printedName": "liveness(textForPassedAction:)",
+            "name": "defaultLiveness",
+            "printedName": "defaultLiveness(textForPassedAction:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -971,8 +1022,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8Liveness0A10DataSourcePAAE8liveness19textForPassedActionSSSgAA0aH0O_tF",
-            "mangledName": "$s8Liveness0A10DataSourcePAAE8liveness19textForPassedActionSSSgAA0aH0O_tF",
+            "usr": "s:8Liveness0A10DataSourcePAAE07defaultA019textForPassedActionSSSgAA0aH0O_tF",
+            "mangledName": "$s8Liveness0A10DataSourcePAAE07defaultA019textForPassedActionSSSgAA0aH0O_tF",
             "moduleName": "Liveness",
             "genericSig": "<τ_0_0 where τ_0_0 : Liveness.LivenessDataSource>",
             "sugared_genericSig": "<Self where Self : Liveness.LivenessDataSource>",
@@ -992,6 +1043,16 @@
         "declAttributes": [
           "AccessControl",
           "ObjC",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Liveness",
+        "declAttributes": [
           "RawDocComment"
         ]
       },
@@ -2089,6 +2150,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "Liveness"
+      },
+      {
         "kind": "TypeDecl",
         "name": "LivenessViewController",
         "printedName": "LivenessViewController",
@@ -2514,22 +2582,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Var",
             "usr": "c:@M@Liveness@objc(cs)LivenessViewController(py)loadingText",
-            "mangledName": "$s8Liveness0A14ViewControllerC11loadingTextSSSgvp",
+            "mangledName": "$s8Liveness0A14ViewControllerC11loadingTextSSvp",
             "moduleName": "Liveness",
             "declAttributes": [
               "HasInitialValue",
@@ -2548,22 +2608,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@Liveness@objc(cs)LivenessViewController(im)loadingText",
-                "mangledName": "$s8Liveness0A14ViewControllerC11loadingTextSSSgvg",
+                "mangledName": "$s8Liveness0A14ViewControllerC11loadingTextSSvg",
                 "moduleName": "Liveness",
                 "implicit": true,
                 "declAttributes": [
@@ -2583,22 +2635,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@Liveness@objc(cs)LivenessViewController(im)setLoadingText:",
-                "mangledName": "$s8Liveness0A14ViewControllerC11loadingTextSSSgvs",
+                "mangledName": "$s8Liveness0A14ViewControllerC11loadingTextSSvs",
                 "moduleName": "Liveness",
                 "implicit": true,
                 "declAttributes": [
@@ -2618,8 +2662,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8Liveness0A14ViewControllerC11loadingTextSSSgvM",
-                "mangledName": "$s8Liveness0A14ViewControllerC11loadingTextSSSgvM",
+                "usr": "s:8Liveness0A14ViewControllerC11loadingTextSSvM",
+                "mangledName": "$s8Liveness0A14ViewControllerC11loadingTextSSvM",
                 "moduleName": "Liveness",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -3322,30 +3366,72 @@
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/CameraController.swift",
       "kind": "StringLiteral",
-      "offset": 2712,
+      "offset": 3062,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/CameraController.swift",
       "kind": "StringLiteral",
-      "offset": 4075,
+      "offset": 4425,
+      "length": 10,
+      "value": "\"Liveness\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/CameraController.swift",
+      "kind": "StringLiteral",
+      "offset": 6305,
       "length": 13,
-      "value": "\"RBKLiveness\""
+      "value": "\"alert.title\""
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/CameraController.swift",
       "kind": "StringLiteral",
-      "offset": 4499,
-      "length": 38,
-      "value": "\"Couldn't get 'captureSession' object\""
+      "offset": 6351,
+      "length": 33,
+      "value": "\"alert.cameraAccess.description2\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/CameraController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6474,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/CameraController.swift",
       "kind": "StringLiteral",
-      "offset": 4989,
-      "length": 38,
-      "value": "\"Couldn't get 'captureSession' object\""
+      "offset": 6576,
+      "length": 17,
+      "value": "\"Action.settings\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/CameraController.swift",
+      "kind": "StringLiteral",
+      "offset": 6834,
+      "length": 15,
+      "value": "\"Action.cancel\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/CameraController.swift",
+      "kind": "StringLiteral",
+      "offset": 7001,
+      "length": 26,
+      "value": "\"alert.cameraAccess.title\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/CameraController.swift",
+      "kind": "StringLiteral",
+      "offset": 7060,
+      "length": 32,
+      "value": "\"alert.cameraAccess.description\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/CameraController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7260,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/CameraController.swift",
@@ -3539,177 +3625,177 @@
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3889,
+      "offset": 4196,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "StringLiteral",
-      "offset": 4061,
+      "offset": 4368,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "StringLiteral",
-      "offset": 4480,
+      "offset": 4787,
       "length": 59,
       "value": "\"com.google.firebaseml.visiondetector.VideoDataOutputQueue\""
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "StringLiteral",
-      "offset": 4676,
+      "offset": 4983,
       "length": 39,
       "value": "\"Failed to add capture session output.\""
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "StringLiteral",
-      "offset": 5056,
+      "offset": 5363,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "StringLiteral",
-      "offset": 5137,
+      "offset": 5444,
       "length": 6,
       "value": "\".mov\""
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "StringLiteral",
-      "offset": 5215,
+      "offset": 5522,
       "length": 29,
       "value": "\"Unable to get temporary url\""
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "StringLiteral",
-      "offset": 5252,
+      "offset": 5559,
       "length": 13,
       "value": "\"RBKLiveness\""
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6219,
+      "offset": 6526,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6551,
+      "offset": 6858,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6987,
+      "offset": 7294,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7622,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "StringLiteral",
-      "offset": 8103,
+      "offset": 7765,
       "length": 67,
       "value": "\"Failed to detect faces with error: \""
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "StringLiteral",
-      "offset": 8168,
+      "offset": 7830,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
+      "kind": "Array",
+      "offset": 7853,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8222,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8424,
+      "offset": 8534,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8574,
+      "offset": 8684,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8756,
+      "offset": 8917,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8967,
+      "offset": 9128,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9117,
+      "offset": 9278,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9720,
+      "offset": 9881,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10146,
+      "offset": 10307,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10172,
+      "offset": 10333,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10201,
+      "offset": 10362,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10235,
+      "offset": 10396,
       "length": 1,
       "value": "5"
-    },
-    {
-      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10340,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
@@ -3720,52 +3806,52 @@
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10662,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10551,
+      "offset": 10712,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10585,
+      "offset": 10746,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10690,
+      "offset": 10851,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10850,
+      "offset": 11011,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10900,
+      "offset": 11061,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10934,
+      "offset": 11095,
       "length": 1,
       "value": "5"
-    },
-    {
-      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 11079,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
@@ -3776,80 +3862,80 @@
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11401,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11266,
+      "offset": 11427,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11295,
+      "offset": 11456,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11329,
+      "offset": 11490,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11474,
+      "offset": 11635,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11631,
+      "offset": 11792,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "FloatLiteral",
-      "offset": 11684,
+      "offset": 11845,
       "length": 3,
       "value": "0.9"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11791,
+      "offset": 11952,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11948,
+      "offset": 12109,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "FloatLiteral",
-      "offset": 12004,
+      "offset": 12165,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "FloatLiteral",
-      "offset": 12042,
+      "offset": 12203,
       "length": 3,
       "value": "0.6"
-    },
-    {
-      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 12149,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
@@ -3861,240 +3947,240 @@
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12476,
+      "offset": 12471,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12635,
+      "offset": 12637,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12842,
+      "offset": 12796,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 13044,
+      "offset": 13003,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 13180,
+      "offset": 13205,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 13341,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "FloatLiteral",
-      "offset": 13469,
+      "offset": 13630,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 13621,
+      "offset": 13782,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14304,
+      "offset": 14465,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 14992,
+      "offset": 15153,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "FloatLiteral",
-      "offset": 15254,
+      "offset": 15415,
       "length": 4,
       "value": "0.75"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15535,
+      "offset": 15696,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15670,
+      "offset": 15831,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15758,
+      "offset": 15919,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15870,
+      "offset": 16031,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 16133,
+      "offset": 16294,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 16256,
+      "offset": 16417,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 16358,
+      "offset": 16519,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 16409,
+      "offset": 16570,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "FloatLiteral",
-      "offset": 16462,
+      "offset": 16623,
       "length": 3,
       "value": "0.9"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "FloatLiteral",
-      "offset": 16518,
+      "offset": 16679,
       "length": 3,
       "value": "0.9"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 16828,
+      "offset": 16989,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 16889,
+      "offset": 17050,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 17065,
+      "offset": 17226,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 17282,
+      "offset": 17443,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 17327,
+      "offset": 17488,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 17334,
+      "offset": 17495,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 17365,
+      "offset": 17526,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 17416,
+      "offset": 17577,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 17423,
+      "offset": 17584,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 17454,
+      "offset": 17615,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 17531,
+      "offset": 17692,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 17674,
+      "offset": 17835,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 17707,
+      "offset": 17868,
       "length": 1,
       "value": "5"
-    },
-    {
-      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 17782,
-      "length": 1,
-      "value": "0"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
@@ -4106,84 +4192,91 @@
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 17976,
+      "offset": 18104,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18137,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 18051,
+      "offset": 18212,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 18485,
+      "offset": 18646,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "FloatLiteral",
-      "offset": 18882,
+      "offset": 19043,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19148,
+      "offset": 19309,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19277,
+      "offset": 19438,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 19390,
+      "offset": 19551,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19817,
+      "offset": 19978,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 20564,
+      "offset": 20725,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20634,
+      "offset": 20795,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 21210,
+      "offset": 21371,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 22364,
+      "offset": 22525,
       "length": 5,
       "value": "false"
     },
@@ -4197,28 +4290,28 @@
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 22869,
+      "offset": 23030,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 22874,
+      "offset": 23035,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 22909,
+      "offset": 23070,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 22963,
+      "offset": 23124,
       "length": 1,
       "value": "1"
     },
@@ -4489,6 +4582,258 @@
       "value": "2"
     },
     {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 481,
+      "length": 4,
+      "value": "\"en\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 677,
+      "length": 22,
+      "value": "\"_no_person_in_camera\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 737,
+      "length": 29,
+      "value": "\"_too_many_persons_in_camera\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 814,
+      "length": 39,
+      "value": "\"_look_straight_and_keep_head_straight\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 896,
+      "length": 25,
+      "value": "\"_put_head_inside_camera\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 1044,
+      "length": 8,
+      "value": "\"_smile\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 1088,
+      "length": 17,
+      "value": "\"_turn_head_left\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 1142,
+      "length": 18,
+      "value": "\"_turn_head_right\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 1196,
+      "length": 17,
+      "value": "\"_tilt_head_left\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 1250,
+      "length": 18,
+      "value": "\"_tilt_head_right\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 1301,
+      "length": 8,
+      "value": "\"_blink\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 1346,
+      "length": 13,
+      "value": "\"_open_mouth\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 1394,
+      "length": 11,
+      "value": "\"_say_mama\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Camera\/LivenessMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 1490,
+      "length": 10,
+      "value": "\"_success\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/VolumeButton.swift",
+      "kind": "BooleanLiteral",
+      "offset": 298,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/VolumeButton.swift",
+      "kind": "StringLiteral",
+      "offset": 653,
+      "length": 39,
+      "value": "\"init(coder:) has not been implemented\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/VolumeButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 814,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 4368,
+      "length": 27,
+      "value": "\"Registration.faceNotFound\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 4439,
+      "length": 30,
+      "value": "\"Registration.toManyFaceError\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 4523,
+      "length": 25,
+      "value": "\"Registration.faceError1\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 4597,
+      "length": 25,
+      "value": "\"Registration.faceError2\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 4891,
+      "length": 20,
+      "value": "\"Registration.smile\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 4953,
+      "length": 23,
+      "value": "\"Registration.turnLeft\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 5019,
+      "length": 24,
+      "value": "\"Registration.turnRight\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 5085,
+      "length": 23,
+      "value": "\"Registration.leanLeft\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 5151,
+      "length": 24,
+      "value": "\"Registration.leanRight\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 5214,
+      "length": 20,
+      "value": "\"Registration.blink\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 5277,
+      "length": 24,
+      "value": "\"Registration.openMouth\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 5342,
+      "length": 22,
+      "value": "\"Registration.sayMama\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 5408,
+      "length": 25,
+      "value": "\"Registration.faceError1\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 5743,
+      "length": 29,
+      "value": "\"Registration.moveHeadSlowly\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 5784,
+      "length": 19,
+      "value": "\"Registration.left\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 5862,
+      "length": 29,
+      "value": "\"Registration.moveHeadSlowly\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 5903,
+      "length": 20,
+      "value": "\"Registration.right\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 6152,
+      "length": 15,
+      "value": "\"Success.title\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Utils\/Notification+extension.swift",
+      "kind": "StringLiteral",
+      "offset": 209,
+      "length": 21,
+      "value": "\"cameraAccessChanged\""
+    },
+    {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Utils\/UIColor+extension.swift",
       "kind": "IntegerLiteral",
       "offset": 256,
@@ -4669,6 +5014,13 @@
       "offset": 1378,
       "length": 9,
       "value": "\"#D0D0D0\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Utils\/UIColor+extension.swift",
+      "kind": "StringLiteral",
+      "offset": 1456,
+      "length": 9,
+      "value": "\"#F5F5F5\""
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/Utils\/String+extension.swift",
@@ -4939,35 +5291,35 @@
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 567,
+      "offset": 583,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 723,
+      "offset": 739,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 747,
+      "offset": 763,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 1271,
+      "offset": 1287,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 1295,
+      "offset": 1311,
       "length": 4,
       "value": "true"
     },
@@ -5114,427 +5466,553 @@
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2765,
+      "offset": 2890,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2854,
+      "offset": 2979,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2963,
+      "offset": 3088,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3069,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3721,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4089,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4706,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4713,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4770,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4777,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4948,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4977,
+      "offset": 3124,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5769,
+      "offset": 3229,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4046,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 4235,
+      "length": 17,
+      "value": "\"Liveness.verify\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4443,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5885,
+      "offset": 5364,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5371,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5428,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5435,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5606,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5635,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6465,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6581,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5971,
+      "offset": 6667,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6059,
+      "offset": 6755,
       "length": 3,
       "value": "-16"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6129,
+      "offset": 6825,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6206,
+      "offset": 6902,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6330,
+      "offset": 7026,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6415,
+      "offset": 7111,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6502,
+      "offset": 7198,
       "length": 3,
       "value": "-16"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 6594,
+      "offset": 7290,
       "length": 4,
       "value": "0.55"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6685,
+      "offset": 7381,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 7269,
+      "offset": 7965,
       "length": 3,
       "value": "-16"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7347,
+      "offset": 8043,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 7557,
+      "offset": 8253,
       "length": 3,
       "value": "-16"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7642,
+      "offset": 8338,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 7772,
+      "offset": 8468,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 7864,
+      "offset": 8560,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 7958,
+      "offset": 8654,
       "length": 3,
       "value": "-16"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8781,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8235,
+      "offset": 8901,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8993,
+      "length": 3,
+      "value": "-24"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9064,
+      "length": 2,
+      "value": "48"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9135,
+      "length": 2,
+      "value": "48"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9365,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8356,
+      "offset": 9468,
+      "length": 2,
+      "value": "28"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9578,
       "length": 3,
       "value": "104"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8418,
+      "offset": 9640,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8564,
+      "offset": 9786,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8607,
+      "offset": 9829,
       "length": 2,
       "value": "96"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8683,
+      "offset": 9905,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8722,
+      "offset": 9944,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8757,
+      "offset": 9979,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8885,
+      "offset": 10107,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8981,
+      "offset": 10203,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10257,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9207,
+      "offset": 10529,
       "length": 13,
       "value": "\"RBKLiveness\""
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9399,
+      "offset": 10803,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9406,
+      "offset": 10810,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9443,
+      "offset": 10847,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9553,
+      "offset": 10957,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9610,
+      "offset": 11014,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10297,
+      "offset": 11701,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10362,
+      "offset": 11766,
       "length": 13,
       "value": "\"alert.title\""
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10426,
+      "offset": 11830,
       "length": 30,
       "value": "\"alert.unexpected.description\""
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10469,
+      "offset": 11873,
       "length": 33,
       "value": "\"alert.notRegistered.description\""
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10593,
+      "offset": 11997,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12412,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10654,
+      "offset": 12782,
+      "length": 14,
+      "value": "\"com.Liveness\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 12881,
+      "length": 5,
+      "value": "\"mp3\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 13209,
+      "length": 14,
+      "value": "\"player error\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13403,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 13415,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 13595,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1827,
+      "offset": 1847,
       "length": 22,
       "value": "\"Liveness.LivenessViewController\""
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12317,
+      "offset": 15334,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15423,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15652,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16153,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 13142,
+      "offset": 16406,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 13374,
+      "offset": 16638,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 13670,
+      "offset": 16934,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 13677,
+      "offset": 16941,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 13736,
+      "offset": 17000,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14487,
+      "offset": 17946,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/baygazin\/Desktop\/RBK\/Liveness\/Liveness\/LivenessViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14879,
+      "offset": 18338,
       "length": 5,
       "value": "false"
     },
@@ -5558,6 +6036,20 @@
       "offset": 395,
       "length": 44,
       "value": "\"Liveness: Corrupted data: No data received\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Library\/Developer\/Xcode\/DerivedData\/Liveness-fwbvzfqbyamkedfjktpwhtcybohs\/Build\/Intermediates.noindex\/DependentBuilds\/Liveness.build\/Release-iphonesimulator\/Liveness.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 725,
+      "length": 8,
+      "value": "\"volume\""
+    },
+    {
+      "filePath": "\/Users\/baygazin\/Library\/Developer\/Xcode\/DerivedData\/Liveness-fwbvzfqbyamkedfjktpwhtcybohs\/Build\/Intermediates.noindex\/DependentBuilds\/Liveness.build\/Release-iphonesimulator\/Liveness.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 858,
+      "length": 10,
+      "value": "\"volume-x\""
     }
   ]
 }
